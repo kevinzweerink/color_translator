@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#wrapper {
+	width:960px;
+	margin:auto
+}
+
+#header {
+	width: 960px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+#headimage {
+	margin: auto;
+	
+}
+
+#headimage2 {
+	margin: auto;
+	
+}
+
+#aboutheader {
+	width:830px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+#about{
+	width:830px;
+	margin:auto;
+}
+
+#userinput {
+	margin:auto;
+	width:830px;
+}
+
+#input {
+	margin: auto;
+	width: 830px;
+}
+
+#text {
+	width: 760px;
+}
+
+#footer {
+	width: 830px;
+	margin:auto;
+}
+
+#response {
+	width: 830px;
+	margin:auto;
+	font-family:Helvetica, Arial, Sans-serif;
+	color:#FFF;
+}
+
+a {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#BDCCD4;
+	font-size:12px;
+}
+
+a:visited {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#BDCCD4;
+	font-size:12px;
+}
+
+a:hover {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#91AEBA;
+	font-size:12px;
+}
+
+a:active {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#75B7CC;
+	font-size:12px;
+}
+
+a.scrollToBottom {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#BDCCD4;
+	font-size:12px;
+}
+
+a.scrollToBottom:visited {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#BDCCD4;
+	font-size:12px;
+}
+
+a.scrollToBottom:hover {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#91AEBA;
+	font-size:12px;
+}
+
+a.scrollToBottom:active {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#75B7CC;
+	font-size:12px;
+}
+
+#scroll {
+	width:30px;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size:12px;
+	color:#BDCCD4;
+	text-decoration:none;
+	float:right;
+}
+	
+
+
+p {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-decoration: none;
+	color:#BDCCD4;
+	font-size:12px;
+	width: 500px;
+	line-height: 18px;
+}
+
+div.newdiv {
+	float:left;
+	height: 20px;
+}
