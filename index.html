@@ -5,16 +5,23 @@
 <title>Color Translator</title>
 <meta name="author" content="Kevin Zweerink">
 <link href="style.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="translator.js" type="text/javascript"></script>
+<script type="text/javascript" src="//use.typekit.net/quu4ijd.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
 
 <header>
-
-	<div class="logo icon-logo" aria-hidden="true"></div>
 	
-	<h1>Color Translator</h1>
+	<div class="title">
+		
+		<img src="logo.png">
+		
+		<h1>Color Translator</h1>
+		
+	</div>
 
 </header>
 
@@ -28,17 +35,25 @@
 	
 	<div class="text-entry-field">
 	
-		<form>
+		<form id="translation-form" onsubmit="translate_to_color(); return false;">
 		
-			<textarea>Text to be translated...</textarea>
-			
-			<input type="submit" value="Translate">
-		
+			<textarea id="user-text" placeholder="Type your stuff here..." oninput="translate_to_color();"></textarea>
+					
 		</form>
 	
 	</div>
 	
+	<div id="color-container">
+	
+	</div>
+	
 </div><!--End of content-->
+
+<footer>
+
+	<h2>Kevin Zweerink made this.</h2>
+
+</footer>
 
 </body>
 </html>

@@ -1,199 +1,166 @@
-var string1
-var input
-var string2
-var array1
-var index1
-var string3
-var substrings
-var array2
+var string1;
+var input;
+var string2;
+var array1;
+var index1;
+var string3;
+var substrings;
+var array2;
 
 function numbers_translate() {
-	for (i=0 ; i<=array1.length ; i++){
-	if (array1[i] == "a") {
-		array1[i] = 1;
-		
+
+	var i = 0;
+
+	while (array1[i]) {
+	
+		var array_bit = array1[i];
+		var holder;
+	
+		switch (array_bit) {
+			case "a":
+				holder = "a";
+				break;
+			case "b":
+				holder = "b";
+				break;
+			case "c":
+				holder = "c";
+				break;
+			case "d":
+				holder = "d";
+				break;
+			case "e":
+				holder = "e";
+				break;
+			case "f":
+				holder = "f";
+				break;
+			case "g":
+				holder = 1;
+				break;
+			case "h":
+				holder = 2;
+				break;
+			case "i":
+				holder = 3;
+				break;
+			case "j":
+				holder = 4;
+				break;
+			case "k":
+				holder = 5;
+				break;
+			case "l":
+				holder = 6;
+				break;
+			case "m":
+				holder = 7;
+				break;
+			case "n":
+				holder = 8;
+				break;
+			case "o":
+				holder = 9;
+				break;
+			case "p":
+				holder = 19;
+				break;
+			case "q":
+				holder = 28;
+				break;
+			case "r":
+				holder = 37;
+				break;
+			case "s":
+				holder = 46;
+				break;
+			case "t":
+				holder = 55;
+				break;
+			case "u":
+				holder = 46;
+				break;
+			case "v":
+				holder = 37;
+				break;
+			case "w":
+				holder = 28;
+				break;
+			case "x":
+				holder = 19;
+				break;
+			case "y":
+				holder = 91;
+				break;
+			case "z":
+				holder = 82;
+				break;
+			default:
+				holder = 0;
+				break;
+			
 		}
-	if (array1[i] == "b") {
-		array1[i] = 2;
 		
-		}
-	if (array1[i] == "c") {
-		array1[i] = 3;
-		
-		}
-	if (array1[i] == "d") {
-		array1[i] = 4;
-		
-		}
-	if (array1[i] == "e") {
-		array1[i] = 5;
-		
-		}
-	if (array1[i] == "f") {
-		array1[i] = 6;
-		
-		}
-	if (array1[i] == "g") {
-		array1[i] = 7;
-		
-		}
-	if (array1[i] == "h") {
-		array1[i] = 8;
-		
-		}
-	if (array1[i] == "i") {
-		array1[i] = 9;
-		
-		}
-	if (array1[i] == "j") {
-		array1[i] = 10;
-		
-		}
-	if (array1[i] == "k") {
-		array1[i] = 21;
-		
-		}
-	if (array1[i] == "l") {
-		array1[i] = 32;
-		
-		}
-	if (array1[i] == "m") {
-		array1[i] = 43;
-		
-		}
-	if (array1[i] == "n") {
-		array1[i] = 54;
-		
-		}
-	if (array1[i] == "o") {
-		array1[i] = 65;
-		
-		}
-	if (array1[i] == "p") {
-		array1[i] = 76;
-		
-		}
-	if (array1[i] == "q") {
-		array1[i] = 87;
-		
-		}
-	if (array1[i] == "r") {
-		array1[i] = 98;
-		
-		}
-	if (array1[i] == "s") {
-		array1[i] = 19;
-		
-		}
-	if (array1[i] == "t") {
-		array1[i] = 20;
-		
-		}
-	if (array1[i] == "u") {
-		array1[i] = 31;
-		
-		}
-	if (array1[i] == "v") {
-		array1[i] = 42;
-		
-		}
-	if (array1[i] == "w") {
-		array1[i] = 53;
-		
-		}
-	if (array1[i] == "x") {
-		array1[i] = 64;
-		
-		}
-	if (array1[i] == "y") {
-		array1[i] = 75;
-		
-		}
-	if (array1[i] == "z") {
-		array1[i] = 86;
-		
-		}
-	if (array1[i] == " ") {
-		array1[i] = 0;
-		
-		}
-	if (array1[i] == ".") {
-		array1[i] = 97;
-		
-		}
-	if (array1[i] == "!") {
-		array1[i] = 28;
-		
-		}
-	if (array1[i] == "?") {
-		array1[i] = 39;
-		
-		}
-	if (array1[i] == "&") {
-		array1[i] = 40;
-		
-		}
-	if (array1[i] == "@") {
-		array1[i] = 51;
-		
-		}
-	if (array1[i] == "/") {
-		array1[i] = 62;
-		
-		}
-	if (array1[i] == ",") {
-		array1[i] = 73;
-		
-		}
-	if (array1[i] == ":") {
-		array1[i] = 84;
-		
-		}
-	if (array1[i] == ";") {
-		array1[i] = 95;
-		
-		}
-	if (array1[i] == "-") {
-		array1[i] = 16;
-		
-		}
-	if (array1[i] == "'") {
-		array1[i] = 27;
-		
-		}
+		array1[i] = holder;
+		i++;
+		 
 	}
+
 }
 
 function splitstring() {
-	string3 = string3.replace(/(\S{6})/g,"$1a");
-	string3 = string3.replace(/a$/,"");
-	array2 = string3.split("a");
+	string3 = string3.replace(/(\S{6})/g,"$1z");
+	string3 = string3.replace(/z$/,"");
+	array2 = string3.split("z");
 	
 }
 
 function adddivs() {
 
-	for (i=0;i<=array2.length; i++){
+	for (i=0;i<=(array2.length-1); i++){
 	
+		while (array2[i].length < 6) {
+			
+			array2[i] = array2[i] + "0";
+			
+		}
+		
 		var newDiv = document.createElement("div");
 		
-		newDiv.innerHTML = "you found me!";
+		newDiv.className = "color-block";
+		
+		var parent=document.getElementById("color-container");
+		
+		parent.insertBefore(newDiv, parent.firstChild);
+		
+		newDiv.style.color = "#fff";
+		
+		newDiv.style.backgroundColor = "#fff";
 		
 		newDiv.style.color = ("#"+array2[i]);
 		
 		newDiv.style.backgroundColor = ("#"+array2[i]);
 		
-		var parent=document.getElementById("response");
+		newDiv.innerHTML = "<p>#"+array2[i]+"</p>";
 		
-		parent.appendChild(newDiv);
+		
 
 	}
 }
 
+var flipswitch = 0;
 
 function translate_to_color() {
+
+	if (flipswitch != 0) {
+		$('.color-block').css('opacity','0');
+		$('.color-block').remove();
+		flipswitch = 0;
+	}
 	
-	input = document.getElementById("text");
+	if (flipswitch == 0) {
+	
+	input = document.getElementById("user-text");
 	string1 = input.value;
 	string2 = string1.toLowerCase();
 	array1 = string2.split("");
@@ -202,14 +169,20 @@ function translate_to_color() {
 	string3 = array1.toString();
 	
 	string3 = string3.replace(/,/gi,"");
-	
+		
 	splitstring();
 	
 	adddivs();
 	
+	$('#color-container').css('padding','2em');
+	$('.color-block').css('opacity','1');
+	
+	flipswitch = 1;
+	
+	}
+	
+	return false;
+	
+	
 }
 
-function dostuff() {
-
-	translate_to_color();
-}
