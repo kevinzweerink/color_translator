@@ -131,6 +131,8 @@ function adddivs() {
 		
 		var parent=document.getElementById("color-container");
 		
+		newDiv.style.width = newElementWidth + "%";
+		
 		parent.insertBefore(newDiv, parent.firstChild);
 		
 		newDiv.style.color = "#fff";
@@ -174,7 +176,7 @@ function translate_to_color() {
 	
 	adddivs();
 	
-	$('#color-container').css('padding','2em');
+	$('#output').css('padding','2em');
 	$('.color-block').css('opacity','1');
 	
 	flipswitch = 1;

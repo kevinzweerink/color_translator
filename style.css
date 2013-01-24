@@ -49,6 +49,14 @@ table {
 img {
 	max-width: 100%;
 }
+textarea {
+	border:none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	resize: none;
+}
 
 * {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -61,118 +69,153 @@ img {
 	transition: all .2s ease;
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-logo:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-logo:before {
+	content: "\e000";
+}
+
 /*############################################################################*/
-
 body {
-	color: #2d2d2d;
-	font-family: "droid-sans-mono", monospace;
-	background-color: #fff;
+	font-size: 16px;
+	font-family: helvetica-neue, helvetica, arial, sans-serif;
+	color: #333;
+	line-height: 1.4
 }
 
-.title {
-	width: 40%;
-	margin: auto;
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-.title img {
-	width: 10%;
-	display: inline-block;
-	float: left;
+a:hover {
+	color: #dddddd;
 }
 
-h1 {
-	font-family: "futura-pt", futura, sans-serif;
-	text-transform: uppercase;
-	font-size: 2em;
-	border-bottom: 5px solid #2d2d2d;
-	display: inline-block;
-	margin: auto;
-	margin-top: 6px;
-	margin-left: 10px;
-	float: left;
+.main-content {
+	overflow: hidden;
 }
 
 header {
-	border-bottom: 1px solid #ddd;
-	padding: 2em;
-	background-color: #fff;
+	width: 100%;
+	padding: .7em;
+	padding-bottom: .2em;
+	background-image: url("stripe_bg.png");
 	overflow: hidden;
+	border-bottom: 1px solid #eee;
 }
 
-.content-wrap {
-	width: 75%;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	margin: auto;
-	background-color: #fff;
+.icon-logo {
+	font-size: 3em;
+	float: left;
+	display: inline-block;
 }
 
-.translator-description {
+h1 {
+	display: inline-block;
+	float: left;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: .25em;
+	margin-left: .2em;
+}
+
+.input {
+	width: 40%;
+	float: left;
+	border-right: 1px solid #eee;
+}
+
+.instructions {
 	padding: 2em;
-	font-size: 1.5em;
-	line-height: 1.3;
-	background-color: #eee;
-	display: none;
+	border-bottom: 1px solid #eee;
 }
 
 .text-entry-field {
-	/*border-top: 1px solid #ddd;*/
-	border-bottom: 1px solid #ddd;
-	position: relative;
+	padding-bottom: 2em;
 }
 
 .text-entry-field textarea {
+	font-size: 1em;
+	font-family: helvetica-neue, helvetica, arial, sans-serif;
+	color: #333;
+	line-height: 1.4;
 	width: 100%;
-	border: none;
-	outline: none;
-	resize: none;
-	font-family: "futura-pt", futura, sans-serif;
-	font-size: 1.5em;
-	padding: 2.5em;
-	text-transform: uppercase;
-	color: #2d2d2d;
-}
-
-.text-entry-field input[type="submit"] {
-	position: absolute;
-	bottom: -.9em;
-	right: -1em;
-	background-color: #2d2d2d;
-	color: #fff;
-	font-family: "futura-pt", futura, sans-serif;
-	text-transform: uppercase;
-	outline: none;
-	border: none;
-	cursor: pointer;
-	font-size: 2em;
-	padding: .2em .5em;
-}
-
-.text-entry-field input[type="submit"]:hover {
-	padding-right: 1em;
-}
-
-#color-container {
-	font-size: 2em;
-	font-family: "futura-pt", futura, sans-serif;
+	height: 24em;
 	padding: 2em;
-	overflow: hidden;
+	
+}
+
+#output {
+	width: 60%;
+	float: right;
+	overflow: scroll;
+	padding: 2em;
 }
 
 .color-block {
 	width: 100%;
+	padding: 2em 0;
+	display: inline-block;
 	float: left;
-	cursor: pointer;
-	text-align: center;
-	padding: 1em 0;
-	opacity: 0;
 }
 
-.color-block:hover p{
-	color: #fff !important;
+.color-block p {
+	text-align: center;
+	font-weight: bold;
+	display: none;
+}
+
+.color-block:hover p {
+	color: #fff;
 }
 
 footer {
-	border-top: 1px solid #ddd;
+	width: 100%;
+	background-image: url('stripe_bg_dark.png');
+	background-color: #333;
+	color: #fff;
 	padding: 2em;
+	overflow: hidden;
+}
+
+footer p {
+	width: 20%;
+	float: left;
+	margin: 1em;
+	font-weight: 100;
+}
+
+.site-info {
+	width: 60%;
+	float: right;
+}
+
+.site-info p {
+	width: 70%;
+	padding-top: 1em;
+	border-top: 2px solid #eee;
+	margin-top: 1em;
+	margin-left: 0;
+}
+
+.descrip {
+	padding-left: 0;
 }
