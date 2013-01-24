@@ -5,39 +5,45 @@
 <title>Color Translator</title>
 <meta name="author" content="Kevin Zweerink">
 <link href="style.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="main.js" type="text/javascript"></script>
 <script src="translator.js" type="text/javascript"></script>
 </head>
 
 <body>
 
 <header>
-
-	<div class="logo icon-logo" aria-hidden="true"></div>
 	
+	<span class="icon-logo" aria-hidden="true"></span>
 	<h1>Color Translator</h1>
 
 </header>
 
-<div class="content-wrap">
+<div class="main-content">
 
-	<div class="translator-description">
-	
-		<p>The color translator will take any standard english text input and convert it to a series of colors. Type or copy and paste any text into the box and hit translate to see what it looks like as colors.</p>
-	
+<div class="input">
+
+	<div class="instructions">
+		<p>Type or copy and paste any text into the box below to see it translated into colors</p>
 	</div>
 	
 	<div class="text-entry-field">
 	
-		<form>
+		<form id="translation-form" onsubmit="translate_to_color(); return false;">
 		
-			<textarea>Text to be translated...</textarea>
-			
-			<input type="submit" value="Translate">
-		
+			<textarea id="user-text" placeholder="Type your stuff here..." oninput="translate_to_color(); checkHeights();"></textarea>
+					
 		</form>
 	
 	</div>
+
+</div>
+
+<div id="output">
+
+	<div id="color-container">
 	
+<<<<<<< HEAD
 	<footer>
 	
 		<h2><a href="http://www.kevinzweerink.com">Kevin Zweerink made this.</a></h2>
@@ -45,6 +51,29 @@
 	</footer>
 	
 </div><!--End of content-->
+=======
+	</div>
+
+</div>
+
+</div>
+	
+
+<footer>
+
+	<p><a href="http://www.kevinzweerink.com">A project by Kevin Zweerink</a></p>
+	
+	<div class="site-info">
+	
+		<p class="descrip">The color translator takes your text input and translates it into colors. Each character is converted into a number or letter based on it’s position in the alphabet, Punctuation, spaces, and other non-alphabetic characters are also converted. After conversion, the characters are split into groups of six, and each  grouping is used to specify a hexideximal color value.</p>
+		
+		<!--<p class="disclaimer">In order to use this site, you will need to have JavaScript enabled.</p>-->
+	
+	</div>
+	
+
+</footer>
+>>>>>>> master
 
 </body>
 </html>
