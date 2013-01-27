@@ -219,3 +219,9 @@ footer p {
 .descrip {
 	padding-left: 0;
 }
+
+@media all and (max-width: 700px) {
+	.text-entry-field textarea {
+		height: 15em;
+	}
+}
